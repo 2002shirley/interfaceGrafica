@@ -180,30 +180,30 @@ public class ConfiguracoesJogo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalvarActionPerformed
-       String dificuldade = "";
+        String dificuldade = "";
         
-        if (rbFacil.isSelected()){
-           dificuldade = "Fácil";
-           
-       }
-          if (rbMedio.isSelected()){
-           dificuldade = "Médio";
-           
-       }
-             if (rbDificil.isSelected()){
-           dificuldade = "Difícil";
-           
-       }
+        if (rbFacil.isSelected()) {
+            dificuldade = "Fácil";
+            
+        }
+        if (rbMedio.isSelected()) {
+            dificuldade = "Médio";
+            
+        }
+        if (rbDificil.isSelected()) {
+            dificuldade = "Difícil";
+            
+        }
         
         String mensagem = "";
-        mensagem  += "Música:" + ckbMusica.isSelected()+".\n";
-        mensagem  += "Legenda:" + ckbLegendas.isSelected()+".\n";
-        mensagem  += "Tela Cheia:" + ckbTelaCheia.isSelected()+".\n";
+        mensagem += "Música:" + ckbMusica.isSelected() + ".\n";
+        mensagem += "Legenda:" + ckbLegendas.isSelected() + ".\n";
+        mensagem += "Tela Cheia:" + ckbTelaCheia.isSelected() + ".\n";
         
-        mensagem  += "Dificuldade:"+dificuldade+".\n";
-        mensagem  += "Volume:" + jsVolume.getValue()+".";
+        mensagem += "Dificuldade:" + dificuldade + ".\n";
+        mensagem += "Volume:" + jsVolume.getValue() + ".";
         
-        JOptionPane.showMessageDialog(null, mensagem);
+        JOptionPane.showMessageDialog(rootPane, mensagem);
     }//GEN-LAST:event_jbSalvarActionPerformed
 
     /**
