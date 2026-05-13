@@ -84,6 +84,11 @@ public class ConfiguracoesJogo extends javax.swing.JFrame {
 
         bgDificuldades.add(rbFacil);
         rbFacil.setText("Fácil");
+        rbFacil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbFacilActionPerformed(evt);
+            }
+        });
 
         bgDificuldades.add(rbMedio);
         rbMedio.setText("Médio");
@@ -205,6 +210,10 @@ public class ConfiguracoesJogo extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(rootPane, mensagem);
     }//GEN-LAST:event_jbSalvarActionPerformed
+
+    private void rbFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbFacilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbFacilActionPerformed
 
     /**
      * @param args the command line arguments
